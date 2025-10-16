@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Volunteer Form</title>
+</head>
+<body>
+    <!-- This is a practice page for Lab 5 -->
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+
+        
+        <!-- Text types can be used for names -->
+        <!-- Placeholder gives an example/default -->
+        <!-- Required will not allow you to submit if it is blank -->
+        <!-- FIRST NAME -->
+        <div>
+            <label for="first_name_field">First name:</label><br>
+            <input type="text" id="first_name_field" name="first_name_field" placeholder="John" required><br>
+        </div>
+        <br>
+
+        <!-- LAST NAME -->
+        <div>
+            <label for="last_name_field">Last name:</label><br>
+            <input type="text" id="last_name_field" name="last_name_field" placeholder="Doe" required><br><br>
+        </div>
+        <br>
+
+        <!-- PHONE -->
+        <div>
+            <label for="phone_field">Phone:</label><br>
+            <input type="tel" id="phone_field" name="phone_field" placeholder="123-456-7890" required><br><br>
+        </div>
+        <br>
+
+        <!-- Email type will require an @ symbol -->
+        <!-- Use placeholder hello@world -->
+        <div>
+            <label for="email_field">Email:</label><br>
+            <input type="email" id="email_field" name="email_field" placeholder="hello@world.com" required><br><br>
+        </div>
+        <br>
+
+        <!-- GENDER (Radio buttons) -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender_field" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender_field" value="Female">
+            <label for="female">Female</label><br><br>
+        </div>
+        <br>
+
+        <!-- AGE (Dropdown menu) -->
+        <div>
+            <label for="age_field">Age:</label><br>
+            <select id="age_field" name="age_field">
+                <option value="under 18">Under 18</option>
+                <option value="18-25">18-25</option>
+                <option value="26-40">26-40</option>
+                <option value="41-60">41-60</option>
+                <option value="60+">60+</option>
+            </select><br><br>
+        </div>
+        <br>
+
+        <!-- DAYS AVAILABLE (Checkboxes) -->
+        <div>
+            <strong>Days Available:</strong><br>
+            <input type="checkbox" id="sunday" name="available_field[]" value="Sunday">
+            <label for="sunday">Sunday</label><br>
+            <input type="checkbox" id="monday" name="available_field[]" value="Monday">
+            <label for="monday">Monday</label><br>
+            <input type="checkbox" id="tuesday" name="available_field[]" value="Tuesday">
+            <label for="tuesday">Tuesday</label><br>
+            <input type="checkbox" id="wednesday" name="available_field[]" value="Wednesday">
+            <label for="wednesday">Wednesday</label><br>
+            <input type="checkbox" id="thursday" name="available_field[]" value="Thursday">
+            <label for="thursday">Thursday</label><br>
+            <input type="checkbox" id="friday" name="available_field[]" value="Friday">
+            <label for="friday">Friday</label><br>
+            <input type="checkbox" id="saturday" name="available_field[]" value="Saturday">
+            <label for="saturday">Saturday</label><br><br>
+        </div>
+        <br>
+
+        <!-- COMMENTS (Textarea) -->
+        <div>
+            <label for="comments_field">Comments:</label><br>
+            <textarea id="comments_field" name="comments_field" rows="5" cols="40" placeholder="Enter your comments here..."></textarea><br><br>
+        </div>
+        <br>
+
+        <!-- SUBMIT and RESET BUTTONS -->
+        <div>
+            <input type="submit" value="Submit Query">
+            <input type="reset" value="Reset Form">
+        </div>
+
+        <!-- HIDDEN FIELD (your name) -->
+        <input type="hidden" name="hidden_field" value="Miguel Galindo">
+
+    </form>
+</body>
+</html>
